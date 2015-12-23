@@ -1,0 +1,9 @@
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Application\obj\Debug\TurismoDDD.Application.csprojResolveAssemblyReference.cache
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Application\bin\Debug\TurismoDDD.Application.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Application\bin\Debug\TurismoDDD.Application.pdb
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Application\obj\Debug\TurismoDDD.Application.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Application\obj\Debug\TurismoDDD.Application.pdb
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Application\bin\Debug\TurismoDDD.Domain.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Application\bin\Debug\TurismoDDD.Domain.pdb
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Application\obj\Debug\TurismoDDD.Application.Properties.Resources.resources
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Application\obj\Debug\TurismoDDD.Application.csproj.GenerateResource.Cache

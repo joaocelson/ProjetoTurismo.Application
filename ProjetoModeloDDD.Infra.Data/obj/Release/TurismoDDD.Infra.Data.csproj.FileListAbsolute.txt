@@ -1,0 +1,12 @@
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Release\TurismoDDD.Infra.Data.dll.config
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Release\TurismoDDD.Infra.Data.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Release\TurismoDDD.Infra.Data.pdb
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Release\EntityFramework.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Release\EntityFramework.SqlServer.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Release\TurismoDDD.Domain.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Release\TurismoDDD.Domain.pdb
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Release\EntityFramework.xml
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Release\EntityFramework.SqlServer.xml
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Release\TurismoDDD.Infra.Data.csprojResolveAssemblyReference.cache
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Release\TurismoDDD.Infra.Data.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Release\TurismoDDD.Infra.Data.pdb
