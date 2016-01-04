@@ -5,6 +5,7 @@ using TurismoDDD.Application.Interface;
 using TurismoDDD.Domain.Entities;
 using TurismoDDD.MVC.ViewModels;
 using System;
+using System.Linq;
 using Newtonsoft.Json;
 
 namespace TurismoDDD.MVC.Controllers
@@ -28,10 +29,35 @@ namespace TurismoDDD.MVC.Controllers
         // GET: Clientes
         public JsonResult Get()
         {
-            var pessoaViewModel = Mapper.Map<IEnumerable<Pessoa>, IEnumerable<PessoaViewModel>>(_pessoaApp.GetAll());
-            return Json(pessoaViewModel, JsonRequestBehavior.AllowGet);
-            
+            var pessoaViewModel = Mapper.Map<IEnumerable<Pessoa>, IEnumerable<PessoaViewModel>>(_pessoaApp.GetAll())
+                .Select(p => new
+                {
+                    pessoaId = p.PessoaId,
+                    nome = p.Nome,
+                    ativo = p.Ativo,
+                    dataCadastro = p.DataCadastro,
+                    sobrenome = p.Sobrenome
+                });
+            return Json(new { Pessoas = pessoaViewModel }, JsonRequestBehavior.AllowGet);
+
         }
+
+        // POST: Cadastro Clientes
+        public JsonResult Get()
+        {
+            var pessoaViewModel = Mapper.Map<IEnumerable<Pessoa>, IEnumerable<PessoaViewModel>>(_pessoaApp.GetAll())
+                .Select(p => new
+                {
+                    pessoaId = p.PessoaId,
+                    nome = p.Nome,
+                    ativo = p.Ativo,
+                    dataCadastro = p.DataCadastro,
+                    sobrenome = p.Sobrenome
+                });
+            return Json(new { Pessoas = pessoaViewModel }, JsonRequestBehavior.AllowGet);
+
+        }
+
 
         public ActionResult Especiais()
         {

@@ -11,7 +11,7 @@ namespace TurismoDDD.Domain.Entities
         public string Email { get; set; }
         public DateTime DataCadastro { get; set; }
         public bool Ativo { get; set; }
-        public virtual IEnumerable<Estabelecimento> Produtos { get; set; }
+        public virtual IEnumerable<Estabelecimento> Estabelecimentos { get; set; }
 
         public bool PessoaEspecial(Pessoa pessoa)
         {

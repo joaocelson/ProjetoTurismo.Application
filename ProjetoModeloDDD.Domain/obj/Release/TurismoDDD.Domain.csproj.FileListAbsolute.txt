@@ -2,3 +2,12 @@ D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\bin\Release\Tu
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\bin\Release\TurismoDDD.Domain.pdb
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\obj\Release\TurismoDDD.Domain.dll
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\obj\Release\TurismoDDD.Domain.pdb
+C:\Users\ct002572\Downloads\ProjetoTurismo.Application-master\ProjetoTurismo.Application-master\ProjetoModeloDDD.Domain\bin\Release\TurismoDDD.Domain.dll
+C:\Users\ct002572\Downloads\ProjetoTurismo.Application-master\ProjetoTurismo.Application-master\ProjetoModeloDDD.Domain\bin\Release\TurismoDDD.Domain.pdb
+C:\Users\ct002572\Downloads\ProjetoTurismo.Application-master\ProjetoTurismo.Application-master\ProjetoModeloDDD.Domain\obj\Release\TurismoDDD.Domain.dll
+C:\Users\ct002572\Downloads\ProjetoTurismo.Application-master\ProjetoTurismo.Application-master\ProjetoModeloDDD.Domain\obj\Release\TurismoDDD.Domain.pdb
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\bin\Release\TurismoDDD.Domain.dll
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\bin\Release\TurismoDDD.Domain.pdb
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\obj\Release\TurismoDDD.Domain.csprojResolveAssemblyReference.cache
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\obj\Release\TurismoDDD.Domain.dll
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\obj\Release\TurismoDDD.Domain.pdb
