@@ -45,6 +45,7 @@ namespace TurismoDDD.MVC.Controllers
 
         // POST: Cliente/Create
         [HttpPost]
+
         [ValidateAntiForgeryToken]
         public ActionResult Create(EstabelecimentoViewModel estabelecimento)
         {

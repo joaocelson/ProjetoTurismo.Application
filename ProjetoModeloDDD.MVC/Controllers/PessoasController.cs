@@ -42,23 +42,6 @@ namespace TurismoDDD.MVC.Controllers
 
         }
 
-        // POST: Cadastro Clientes
-        public JsonResult Get()
-        {
-            var pessoaViewModel = Mapper.Map<IEnumerable<Pessoa>, IEnumerable<PessoaViewModel>>(_pessoaApp.GetAll())
-                .Select(p => new
-                {
-                    pessoaId = p.PessoaId,
-                    nome = p.Nome,
-                    ativo = p.Ativo,
-                    dataCadastro = p.DataCadastro,
-                    sobrenome = p.Sobrenome
-                });
-            return Json(new { Pessoas = pessoaViewModel }, JsonRequestBehavior.AllowGet);
-
-        }
-
-
         public ActionResult Especiais()
         {
             var pessoaViewModel = Mapper.Map<IEnumerable<Pessoa>, IEnumerable<PessoaViewModel>>(_pessoaApp.ObterPessoasEspeciais());

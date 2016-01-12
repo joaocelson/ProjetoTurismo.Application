@@ -16,6 +16,7 @@ namespace TurismoDDD.MVC.AutoMapper
         {
             Mapper.CreateMap<Pessoa, PessoaViewModel>();
             Mapper.CreateMap<Estabelecimento, EstabelecimentoViewModel>();
+            Mapper.CreateMap<TipoEstabelecimento, TipoEstabelecimentoViewModel>();
             Mapper.CreateMap<TipoPessoa, TipoPessoaViewModel>();
         }
     }

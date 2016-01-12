@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Entities\TipoEstabelecimento.cs" />
     <Compile Include="Entities\TipoPessoa.cs" />
     <Compile Include="Entities\Pessoa.cs" />
     <Compile Include="Entities\Estabelecimento.cs" />
