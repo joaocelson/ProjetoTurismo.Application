@@ -10,6 +10,8 @@
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
     <ProjectView>ProjectFiles</ProjectView>
     <NameOfLastUsedPublishProfile>publish</NameOfLastUsedPublishProfile>
+    <WebStackScaffolding_DbContextTypeFullName>TurismoDDD.Infra.Data.Contexto.ProjetoModeloContext</WebStackScaffolding_DbContextTypeFullName>
+    <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

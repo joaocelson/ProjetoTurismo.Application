@@ -6,11 +6,11 @@ using TurismoDDD.Domain.Interfaces.Repositories;
 
 namespace TurismoDDD.Infra.Data.Repositories
 {
-    public class TipoEstabelecimentoRepository : RepositoryBase<TipoEstabelecimento>, ITipoEstabelecimentoRepository
+    public class EstabelecimentoRepository : RepositoryBase<Estabelecimento>, IEstabelecimentoRepository
     {
-        public IEnumerable<TipoEstabelecimento> BuscarPorNome(string nome)
+        public IEnumerable<Estabelecimento> BuscarPorNome(string nome)
         {
-            return Db.TipoEstabelecimentos.Where(p => p.Nome == nome);
+            return null;
         }
     }
 }

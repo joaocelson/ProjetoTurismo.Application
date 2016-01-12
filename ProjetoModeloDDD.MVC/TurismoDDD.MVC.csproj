@@ -45,6 +45,14 @@
     <Reference Include="AutoMapper.Net4">
       <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.Net4.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Ninject">
       <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
@@ -146,6 +154,7 @@
     <Compile Include="AutoMapper\AutoMapperConfig.cs" />
     <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
     <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
+    <Compile Include="Controllers\TipoEstabelecimentoController.cs" />
     <Compile Include="Controllers\TipoPessoasController.cs" />
     <Compile Include="Controllers\PessoasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -154,6 +163,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\TipoEstabelecimentoViewModel.cs" />
     <Compile Include="ViewModels\TipoPessoaViewModel.cs" />
     <Compile Include="ViewModels\PessoaViewModel.cs" />
     <Compile Include="ViewModels\EstabelecimentoViewModel.cs" />
@@ -211,10 +221,16 @@
     <Content Include="Views\TipoPessoas\Delete.cshtml" />
     <Content Include="Views\TipoPessoas\Create.cshtml" />
     <Content Include="Views\TipoPessoas\Details.cshtml" />
+    <Content Include="Views\TipoEstabelecimento\Index.cshtml" />
+    <Content Include="Views\TipoEstabelecimento\Details.cshtml" />
+    <Content Include="Views\TipoEstabelecimento\Create.cshtml" />
+    <Content Include="Views\TipoEstabelecimento\Edit.cshtml" />
+    <Content Include="Views\TipoEstabelecimento\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\" />
+    <Folder Include="Views\TipoEstabelecimentos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

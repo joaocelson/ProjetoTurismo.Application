@@ -148,3 +148,5 @@ C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\EntityFramewo
 C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\obj\Release\TurismoDDD.MVC.csprojResolveAssemblyReference.cache
 C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\obj\Release\ProjetoModeloDDD.MVC.dll
 C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\obj\Release\ProjetoModeloDDD.MVC.pdb
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\EntityFramework.SqlServer.dll
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\EntityFramework.SqlServer.xml
