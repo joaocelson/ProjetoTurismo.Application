@@ -163,6 +163,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\TratamentoLog.cs" />
     <Compile Include="ViewModels\TipoEstabelecimentoViewModel.cs" />
     <Compile Include="ViewModels\TipoPessoaViewModel.cs" />
     <Compile Include="ViewModels\PessoaViewModel.cs" />

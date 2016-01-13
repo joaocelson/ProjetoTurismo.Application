@@ -7,6 +7,7 @@ using TurismoDDD.MVC.ViewModels;
 using System.IO;
 using System.Drawing;
 using System;
+using Util;
 
 namespace TurismoDDD.MVC.Controllers
 {
@@ -51,22 +52,79 @@ namespace TurismoDDD.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "nomeCasa,numeroPessoas,telefoneCasa,fotoPerfil,idPessoa")] EstabelecimentoViewModel estabelecimentoView)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var estabelecimentoDomain = Mapper.Map<EstabelecimentoViewModel, Estabelecimento>(estabelecimentoView);
 
-                byte[] byteArrayIn = System.Text.Encoding.ASCII.GetBytes(estabelecimentoDomain.NomeFotoPerfil);
-                MemoryStream ms = new MemoryStream(byteArrayIn);
-                Image returnImage = Image.FromStream(ms);
-                returnImage.Save("/imagens/" + estabelecimentoDomain.PessoaId + "_" + estabelecimentoDomain.Nome + "_" + DateTime.Today.ToString());
-                _estabelecimentoApp.Add(estabelecimentoDomain);
+                if (ModelState.IsValid)
+                {
+                    var estabelecimentoDomain = Mapper.Map<EstabelecimentoViewModel, Estabelecimento>(estabelecimentoView);
 
-                return RedirectToAction("Index");
+                    byte[] byteArrayIn = System.Text.Encoding.ASCII.GetBytes(estabelecimentoDomain.NomeFotoPerfil);
+                    MemoryStream ms = new MemoryStream(byteArrayIn);
+                    Image returnImage = Image.FromStream(ms);
+                    if (!Directory.Exists(AppDomain.CurrentDomain.BaseDirectory + "/imagens"))
+                    {
+                        Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "/imagens");
+                    }
+                    returnImage.Save(AppDomain.CurrentDomain.BaseDirectory + "/imagens/" + estabelecimentoDomain.PessoaId + "_" + estabelecimentoDomain.Nome + "_" + DateTime.Today.ToString());
+                    _estabelecimentoApp.Add(estabelecimentoDomain);
+
+                    return RedirectToAction("Index");
+                }
+
+                ViewBag.PessoaId = new SelectList(_pessoaApp.GetAll(), "PessoaId", "Nome", estabelecimentoView.PessoaId);
+
+                return View(estabelecimentoView);
             }
+            catch (Exception e)
+            {
+                TratamentoLog.GravarLog("EstabelecimentoController:Create: " + e.Message, TratamentoLog.NivelLog.Erro);
+                TratamentoLog.GravarLog("EstabelecimentoController:Create: " + e.TargetSite, TratamentoLog.NivelLog.Erro);
 
-            ViewBag.PessoaId = new SelectList(_pessoaApp.GetAll(), "PessoaId", "Nome", estabelecimentoView.PessoaId);
+                throw;
+            }
+        }
 
-            return View(estabelecimentoView);
+        // POST: Cliente/Create
+        [HttpPost]
+        public ActionResult Cadastro(String nomeCasa,String numeroPessoas,String telefoneCasa,String fotoPerfil,String idPessoa)
+        {
+            try
+            {
+                EstabelecimentoViewModel estabelecimentoView = new EstabelecimentoViewModel();
+                if (ModelState.IsValid)
+                {
+                  
+                    estabelecimentoView.Nome = nomeCasa;
+                    estabelecimentoView.NomeFotoPerfil = fotoPerfil;
+                    estabelecimentoView.PessoaId = Convert.ToInt32(idPessoa);
+
+                    var estabelecimentoDomain = Mapper.Map<EstabelecimentoViewModel, Estabelecimento>(estabelecimentoView);
+
+                    byte[] byteArrayIn = System.Text.Encoding.ASCII.GetBytes(estabelecimentoDomain.NomeFotoPerfil);
+                    MemoryStream ms = new MemoryStream(byteArrayIn);
+                    Image returnImage = Image.FromStream(ms);
+                    if (!Directory.Exists(AppDomain.CurrentDomain.BaseDirectory + "/imagens"))
+                    {
+                        Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "/imagens");
+                    }
+                    returnImage.Save(AppDomain.CurrentDomain.BaseDirectory + "/imagens/" + estabelecimentoDomain.PessoaId + "_" + estabelecimentoDomain.Nome + "_" + DateTime.Today.ToString());
+                    _estabelecimentoApp.Add(estabelecimentoDomain);
+
+                    return RedirectToAction("Index");
+                }
+
+                ViewBag.PessoaId = new SelectList(_pessoaApp.GetAll(), "PessoaId", "Nome", estabelecimentoView.PessoaId);
+
+                return View(estabelecimentoView);
+            }
+            catch (Exception e)
+            {
+                TratamentoLog.GravarLog("EstabelecimentoController:Create: " + e.Message, TratamentoLog.NivelLog.Erro);
+                TratamentoLog.GravarLog("EstabelecimentoController:Create: " + e.TargetSite, TratamentoLog.NivelLog.Erro);
+
+                throw;
+            }
         }
 
         // GET: Cliente/Edit/5
