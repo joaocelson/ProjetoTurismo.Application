@@ -8,6 +8,7 @@ namespace TurismoDDD.Domain.Entities
         public decimal Valor { get; set; }
         public bool Disponivel { get; set; }
         public string Descricacao { get; set; }
+        public string NomeFotoPerfil { get; set; }
 
         public int PessoaId { get; set; }
         public int TipoEstabelecimentoId { get; set; }

@@ -42,3 +42,11 @@ D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\TurismoDDD.Do
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\TurismoDDD.Domain.pdb
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\TurismoDDD.Infra.Data.dll
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\TurismoDDD.Infra.Data.pdb
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\EntityFramework.SqlServer.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\System.Net.Http.Formatting.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\System.Web.Http.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\System.Web.Http.WebHost.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\EntityFramework.SqlServer.xml
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\System.Net.Http.Formatting.xml
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\System.Web.Http.xml
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.MVC\bin\System.Web.Http.WebHost.xml

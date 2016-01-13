@@ -58,7 +58,7 @@
     <Compile Include="Repositories\EstabelecimentoRepository.cs" />
     <Compile Include="Repositories\TipoPessoaRepository.cs" />
     <Compile Include="Repositories\PessoaRepository.cs" />
-    <Compile Include="Repositories\TipoEstabelecimentoRepository1.cs" />
+    <Compile Include="Repositories\TipoEstabelecimentoRepository.cs" />
     <Compile Include="Repositories\RespositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>

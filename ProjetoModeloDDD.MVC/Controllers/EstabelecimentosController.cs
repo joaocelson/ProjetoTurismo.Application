@@ -4,6 +4,9 @@ using AutoMapper;
 using TurismoDDD.Application.Interface;
 using TurismoDDD.Domain.Entities;
 using TurismoDDD.MVC.ViewModels;
+using System.IO;
+using System.Drawing;
+using System;
 
 namespace TurismoDDD.MVC.Controllers
 {
@@ -45,20 +48,25 @@ namespace TurismoDDD.MVC.Controllers
 
         // POST: Cliente/Create
         [HttpPost]
-
         [ValidateAntiForgeryToken]
-        public ActionResult Create(EstabelecimentoViewModel estabelecimento)
+        public ActionResult Create([Bind(Include = "nomeCasa,numeroPessoas,telefoneCasa,fotoPerfil,idPessoa")] EstabelecimentoViewModel estabelecimentoView)
         {
             if (ModelState.IsValid)
             {
-                var estabelecimentoDomain = Mapper.Map<EstabelecimentoViewModel, Estabelecimento>(estabelecimento);
+                var estabelecimentoDomain = Mapper.Map<EstabelecimentoViewModel, Estabelecimento>(estabelecimentoView);
+
+                byte[] byteArrayIn = System.Text.Encoding.ASCII.GetBytes(estabelecimentoDomain.NomeFotoPerfil);
+                MemoryStream ms = new MemoryStream(byteArrayIn);
+                Image returnImage = Image.FromStream(ms);
+                returnImage.Save("/imagens/" + estabelecimentoDomain.PessoaId + "_" + estabelecimentoDomain.Nome + "_" + DateTime.Today.ToString());
                 _estabelecimentoApp.Add(estabelecimentoDomain);
 
                 return RedirectToAction("Index");
             }
 
-            ViewBag.PessoaId = new SelectList(_pessoaApp.GetAll(), "PessoaId", "Nome", estabelecimento.PessoaId);
-            return View(estabelecimento);
+            ViewBag.PessoaId = new SelectList(_pessoaApp.GetAll(), "PessoaId", "Nome", estabelecimentoView.PessoaId);
+
+            return View(estabelecimentoView);
         }
 
         // GET: Cliente/Edit/5

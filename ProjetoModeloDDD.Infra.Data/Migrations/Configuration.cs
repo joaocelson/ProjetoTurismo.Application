@@ -9,8 +9,7 @@ namespace TurismoDDD.Infra.Data.Migrations
     {
         public Configuration()
         {
-            this.AutomaticMigrationsEnabled = true;
-            this.AutomaticMigrationDataLossAllowed = true; 
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(TurismoDDD.Infra.Data.Contexto.ProjetoModeloContext context)

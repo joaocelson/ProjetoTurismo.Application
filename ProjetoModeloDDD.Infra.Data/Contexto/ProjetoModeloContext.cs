@@ -18,6 +18,8 @@ namespace TurismoDDD.Infra.Data.Contexto
         public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Estabelecimento> Estabelecimentos { get; set; }
         public DbSet<TipoPessoa> TipoPessoas { get; set; }
+        public DbSet<TipoEstabelecimento> TipoEstabelecimentos { get; set; }
+
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -39,6 +41,7 @@ namespace TurismoDDD.Infra.Data.Contexto
             modelBuilder.Configurations.Add(new PessoaConfiguration());
             modelBuilder.Configurations.Add(new EstabelecimentoConfiguration());
             modelBuilder.Configurations.Add(new TipoPessoaConfiguration());
+            modelBuilder.Configurations.Add(new TipoEstabelecimentoConfiguration());
         }
 
         public override int SaveChanges()
