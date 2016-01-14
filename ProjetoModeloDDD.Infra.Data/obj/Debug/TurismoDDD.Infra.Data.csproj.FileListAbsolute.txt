@@ -10,3 +10,17 @@ D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Debug\
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Debug\TurismoDDD.Infra.Data.pdb
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Debug\TurismoDDD.Infra.Data.dll
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Debug\TurismoDDD.Infra.Data.pdb
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Debug\TurismoDDD.Infra.Data.dll.config
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Debug\TurismoDDD.Infra.Data.dll
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Debug\TurismoDDD.Infra.Data.pdb
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Debug\EntityFramework.dll
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Debug\TurismoDDD.Domain.dll
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Debug\TurismoDDD.Domain.pdb
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Debug\EntityFramework.xml
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Debug\TurismoDDD.Infra.Data.csprojResolveAssemblyReference.cache
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Debug\TurismoDDD.Infra.Data.Migrations.Inicial.resources
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Debug\TurismoDDD.Infra.Data.csproj.GenerateResource.Cache
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Debug\TurismoDDD.Infra.Data.dll
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Debug\TurismoDDD.Infra.Data.pdb

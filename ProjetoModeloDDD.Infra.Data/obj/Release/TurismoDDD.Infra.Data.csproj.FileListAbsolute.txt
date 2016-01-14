@@ -34,5 +34,5 @@ D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\bin\Releas
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Release\TurismoDDD.Infra.Data.csprojResolveAssemblyReference.cache
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Release\TurismoDDD.Infra.Data.dll
 D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Release\TurismoDDD.Infra.Data.pdb
-C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Release\TurismoDDD.Infra.Data.Migrations.InitialCreate.resources
+C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Release\TurismoDDD.Infra.Data.Migrations.Inicial.resources
 C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Infra.Data\obj\Release\TurismoDDD.Infra.Data.csproj.GenerateResource.Cache

@@ -10,7 +10,7 @@ namespace Util
         public enum NivelLog { Info, Erro, Acao };
         public enum TipoLog { LogPainel, LogCampo };
 
-        private static String pathPastaLogPainel = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log_Painel");
+        private static String pathPastaLogPainel = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log");
         private static String pathPastaLogCampo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log_Campo");
 
         private static String NiveisLogAtual = "Info|Erro|Acao";
