@@ -55,7 +55,7 @@ namespace TurismoDDD.MVC.Controllers
                 // Convert Base64 String to byte[]
                 byte[] imageBytes = Convert.FromBase64String(base64String);
                 // Convert byte[] to Image
-                System.IO.File.WriteAllBytes("c:\\publish\\imagens\\teste.png", imageBytes);
+                // System.IO.File.WriteAllBytes("c:\\publish\\imagens\\teste.png", imageBytes);
                 using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
                 {
                     Image image = Image.FromStream(ms, true);
@@ -82,9 +82,9 @@ namespace TurismoDDD.MVC.Controllers
 
                 Image returnImage = Base64ToImage(estabelecimentoDomain.NomeFotoPerfil);
 
-                if (!Directory.Exists(HostingEnvironment.ApplicationPhysicalPath + "/imagens"))
+                if (!Directory.Exists(HostingEnvironment.ApplicationPhysicalPath + "\\imagens"))
                 {
-                    Directory.CreateDirectory(HostingEnvironment.ApplicationPhysicalPath + "/imagens");
+                    Directory.CreateDirectory(HostingEnvironment.ApplicationPhysicalPath + "\\imagens");
                 }
                 estabelecimentoDomain.NomeFotoPerfil = HostingEnvironment.ApplicationPhysicalPath + "\\imagens\\" + estabelecimentoDomain.PessoaId + "_" + estabelecimentoDomain.Nome + "_" + DateTime.Now.Millisecond;
 
