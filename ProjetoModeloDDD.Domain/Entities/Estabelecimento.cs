@@ -10,10 +10,10 @@ namespace TurismoDDD.Domain.Entities
         public string Descricacao { get; set; }
         public string NomeFotoPerfil { get; set; }
 
-        public int PessoaId { get; set; }
+        public int UsuarioId { get; set; }
         public int TipoEstabelecimentoId { get; set; }
 
         public virtual TipoEstabelecimento TipoEstabelecimento { get; set; }
-        public virtual Pessoa Pessoa { get; set; }
+        public virtual Usuario Usuario { get; set; }
     }
 }

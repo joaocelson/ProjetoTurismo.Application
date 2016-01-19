@@ -17,9 +17,9 @@ namespace TurismoDDD.Infra.Data.EntityConfig
             Property(p => p.Valor)
                 .IsRequired();
 
-            HasRequired(p => p.Pessoa)
+            HasRequired(p => p.Usuario)
                 .WithMany()
-                .HasForeignKey(p => p.PessoaId);
+                .HasForeignKey(p => p.UsuarioId);
         }
     }
 }

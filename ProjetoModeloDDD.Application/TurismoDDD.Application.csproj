@@ -40,18 +40,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppServiceBase.cs" />
+    <Compile Include="TelefoneAppService.cs" />
+    <Compile Include="CurtidaAppService.cs" />
+    <Compile Include="Interface\ICurtidaAppService.cs" />
+    <Compile Include="TipoFotoAppService.cs" />
+    <Compile Include="FotoAppService.cs" />
+    <Compile Include="PublicacaoAppService.cs" />
+    <Compile Include="PousadaHotelAppService.cs" />
+    <Compile Include="ChaleAppService.cs" />
+    <Compile Include="Interface\IPublicacaoAppService.cs" />
+    <Compile Include="Interface\ITelefoneAppService.cs" />
+    <Compile Include="Interface\ITipoFotoAppService.cs" />
+    <Compile Include="Interface\IFotoAppService.cs" />
+    <Compile Include="Interface\IPousadaHotelAppService.cs" />
+    <Compile Include="Interface\IChaleAppService.cs" />
+    <Compile Include="Interface\ICasaAppService.cs" />
     <Compile Include="TipoEstabelecimentoAppService.cs" />
     <Compile Include="Interface\ITipoEstabelecimentoAppService.cs" />
-    <Compile Include="Interface\IPessoaAppService.cs" />
+    <Compile Include="Interface\IUsuarioAppService.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="TipoPessoaAppService.cs" />
-    <Compile Include="PessoaAppService.cs" />
+    <Compile Include="TipoUsuarioAppService.cs" />
+    <Compile Include="CasaAppService.cs" />
+    <Compile Include="UsuarioAppService.cs" />
     <Compile Include="Interface\IAppServiceBase.cs" />
-    <Compile Include="Interface\ITipoPessoaAppService.cs" />
+    <Compile Include="Interface\ITipoUsuarioAppService.cs" />
     <Compile Include="Interface\IEstabelecimentoAppService.cs" />
     <Compile Include="EstabelecimentoAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

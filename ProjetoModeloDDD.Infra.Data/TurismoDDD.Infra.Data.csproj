@@ -49,19 +49,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexto\ProjetoModeloContext.cs" />
+    <Compile Include="EntityConfig\TipoFotoConfiguration.cs" />
+    <Compile Include="EntityConfig\TelefoneConfiguration.cs" />
+    <Compile Include="EntityConfig\PublicacaoHotelConfiguration.cs" />
+    <Compile Include="EntityConfig\PousadaHotelConfiguration.cs" />
+    <Compile Include="EntityConfig\FotoConfiguration.cs" />
+    <Compile Include="EntityConfig\CurtidaConfiguration.cs" />
+    <Compile Include="EntityConfig\ChaleConfiguration.cs" />
+    <Compile Include="EntityConfig\CasaConfiguration.cs" />
     <Compile Include="EntityConfig\TipoEstabelecimentoConfiguration.cs" />
-    <Compile Include="EntityConfig\TipoPessoaConfiguration.cs" />
-    <Compile Include="EntityConfig\PessoaConfiguration.cs" />
+    <Compile Include="EntityConfig\TipoUsuarioConfiguration.cs" />
+    <Compile Include="EntityConfig\UsuarioConfiguration.cs" />
     <Compile Include="EntityConfig\EstabelecimentoConfiguration.cs" />
-    <Compile Include="Migrations\201601141349034_Inicial.cs" />
-    <Compile Include="Migrations\201601141349034_Inicial.Designer.cs">
-      <DependentUpon>201601141349034_Inicial.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\TelefoneRepository.cs" />
+    <Compile Include="Repositories\PublicacaoRepository.cs" />
+    <Compile Include="Repositories\FotoRepository.cs" />
+    <Compile Include="Repositories\PousadaHotelRepository.cs" />
+    <Compile Include="Repositories\CurtidaRepository.cs" />
+    <Compile Include="Repositories\ChaleRepository.cs" />
+    <Compile Include="Repositories\CasaRepository.cs" />
     <Compile Include="Repositories\EstabelecimentoRepository.cs" />
-    <Compile Include="Repositories\TipoPessoaRepository.cs" />
-    <Compile Include="Repositories\PessoaRepository.cs" />
+    <Compile Include="Repositories\TipoUsuarioRepository.cs" />
+    <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="Repositories\TipoEstabelecimentoRepository.cs" />
     <Compile Include="Repositories\RespositoryBase.cs" />
   </ItemGroup>
@@ -74,11 +85,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201601141349034_Inicial.resx">
-      <DependentUpon>201601141349034_Inicial.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

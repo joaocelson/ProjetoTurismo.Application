@@ -15,9 +15,9 @@ namespace TurismoDDD.Infra.Data.Contexto
             
         }
 
-        public DbSet<Pessoa> Pessoas { get; set; }
+        public DbSet<Usuario> Pessoas { get; set; }
         public DbSet<Estabelecimento> Estabelecimentos { get; set; }
-        public DbSet<TipoPessoa> TipoPessoas { get; set; }
+        public DbSet<TipoUsuario> TipoPessoas { get; set; }
         public DbSet<TipoEstabelecimento> TipoEstabelecimentos { get; set; }
 
 
@@ -38,9 +38,9 @@ namespace TurismoDDD.Infra.Data.Contexto
             modelBuilder.Properties<string>()
                 .Configure(p => p.HasMaxLength(100));
 
-            modelBuilder.Configurations.Add(new PessoaConfiguration());
+            modelBuilder.Configurations.Add(new UsuarioConfiguration());
             modelBuilder.Configurations.Add(new EstabelecimentoConfiguration());
-            modelBuilder.Configurations.Add(new TipoPessoaConfiguration());
+            modelBuilder.Configurations.Add(new TipoUsuarioConfiguration());
             modelBuilder.Configurations.Add(new TipoEstabelecimentoConfiguration());
         }
 

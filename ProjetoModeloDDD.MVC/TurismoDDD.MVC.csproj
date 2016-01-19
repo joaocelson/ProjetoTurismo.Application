@@ -157,8 +157,8 @@
     <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
     <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
     <Compile Include="Controllers\TipoEstabelecimentoController.cs" />
-    <Compile Include="Controllers\TipoPessoasController.cs" />
-    <Compile Include="Controllers\PessoasController.cs" />
+    <Compile Include="Controllers\TipoUsuarioController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\EstabelecimentosController.cs" />
     <Compile Include="Global.asax.cs">
@@ -167,8 +167,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\TratamentoLog.cs" />
     <Compile Include="ViewModels\TipoEstabelecimentoViewModel.cs" />
-    <Compile Include="ViewModels\TipoPessoaViewModel.cs" />
-    <Compile Include="ViewModels\PessoaViewModel.cs" />
+    <Compile Include="ViewModels\TipoUsuarioViewModel.cs" />
+    <Compile Include="ViewModels\UsuarioViewModel.cs" />
     <Compile Include="ViewModels\EstabelecimentoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -208,22 +208,22 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Pessoas\Index.cshtml" />
-    <Content Include="Views\Pessoas\Create.cshtml" />
-    <Content Include="Views\Pessoas\Delete.cshtml" />
-    <Content Include="Views\Pessoas\Details.cshtml" />
-    <Content Include="Views\Pessoas\Edit.cshtml" />
-    <Content Include="Views\Pessoas\Especiais.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\Usuario\Create.cshtml" />
+    <Content Include="Views\Usuario\Delete.cshtml" />
+    <Content Include="Views\Usuario\Details.cshtml" />
+    <Content Include="Views\Usuario\Edit.cshtml" />
+    <Content Include="Views\Usuario\Especiais.cshtml" />
     <Content Include="Views\Estabelecimentos\Index.cshtml" />
     <Content Include="Views\Estabelecimentos\Create.cshtml" />
     <Content Include="Views\Estabelecimentos\Details.cshtml" />
     <Content Include="Views\Estabelecimentos\Edit.cshtml" />
     <Content Include="Views\Estabelecimentos\Delete.cshtml" />
-    <Content Include="Views\TipoPessoas\Edit.cshtml" />
-    <Content Include="Views\TipoPessoas\Index.cshtml" />
-    <Content Include="Views\TipoPessoas\Delete.cshtml" />
-    <Content Include="Views\TipoPessoas\Create.cshtml" />
-    <Content Include="Views\TipoPessoas\Details.cshtml" />
+    <Content Include="Views\TipoUsuario\Edit.cshtml" />
+    <Content Include="Views\TipoUsuario\Index.cshtml" />
+    <Content Include="Views\TipoUsuario\Delete.cshtml" />
+    <Content Include="Views\TipoUsuario\Create.cshtml" />
+    <Content Include="Views\TipoUsuario\Details.cshtml" />
     <Content Include="Views\TipoEstabelecimento\Index.cshtml" />
     <Content Include="Views\TipoEstabelecimento\Details.cshtml" />
     <Content Include="Views\TipoEstabelecimento\Create.cshtml" />

@@ -14,11 +14,12 @@ namespace TurismoDDD.MVC.Controllers
 {
     public class EstabelecimentosController : Controller
     {
+
         // GET: Produtos
         private readonly IEstabelecimentoAppService _estabelecimentoApp;
-        private readonly IPessoaAppService _pessoaApp;
+        private readonly IUsuarioAppService _pessoaApp;
 
-        public EstabelecimentosController(IEstabelecimentoAppService estabelecimentoApp, IPessoaAppService pessoaApp)
+        public EstabelecimentosController(IEstabelecimentoAppService estabelecimentoApp, IUsuarioAppService pessoaApp)
         {
             _estabelecimentoApp = estabelecimentoApp;
             _pessoaApp = pessoaApp;
@@ -86,7 +87,7 @@ namespace TurismoDDD.MVC.Controllers
                 {
                     Directory.CreateDirectory(HostingEnvironment.ApplicationPhysicalPath + "\\imagens");
                 }
-                estabelecimentoDomain.NomeFotoPerfil = HostingEnvironment.ApplicationPhysicalPath + "\\imagens\\" + estabelecimentoDomain.PessoaId + "_" + estabelecimentoDomain.Nome + "_" + DateTime.Now.Millisecond;
+                estabelecimentoDomain.NomeFotoPerfil = HostingEnvironment.ApplicationPhysicalPath + "\\imagens\\" + estabelecimentoDomain.UsuarioId + "_" + estabelecimentoDomain.Nome + "_" + DateTime.Now.Millisecond;
 
                 returnImage.Save(estabelecimentoDomain.NomeFotoPerfil + ".jpg");
 
@@ -126,7 +127,7 @@ namespace TurismoDDD.MVC.Controllers
                     {
                         Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "/imagens");
                     }
-                    returnImage.Save(AppDomain.CurrentDomain.BaseDirectory + "/imagens/" + estabelecimentoDomain.PessoaId + "_" + estabelecimentoDomain.Nome + "_" + DateTime.Today.ToString());
+                    returnImage.Save(AppDomain.CurrentDomain.BaseDirectory + "/imagens/" + estabelecimentoDomain.UsuarioId + "_" + estabelecimentoDomain.Nome + "_" + DateTime.Today.ToString());
                     _estabelecimentoApp.Add(estabelecimentoDomain);
 
                     return RedirectToAction("Index");

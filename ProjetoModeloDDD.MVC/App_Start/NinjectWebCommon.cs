@@ -70,23 +70,23 @@ namespace TurismoDDD.MVC.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind(typeof(IAppServiceBase<>)).To(typeof(AppServiceBase<>));
-            kernel.Bind<IPessoaAppService>().To<PessoaAppService>();
+            kernel.Bind<IUsuarioAppService>().To<UsuarioAppService>();
             kernel.Bind<IEstabelecimentoAppService>().To<EstabelecimentoAppService>();
             kernel.Bind<ITipoEstabelecimentoAppService>().To<TipoEstabelecimentoAppService>();
-            kernel.Bind<ITipoPessoaAppService>().To<TipoPessoaAppService>();
+            kernel.Bind<ITipoUsuarioAppService>().To<TipoUsuarioAppService>();
 
             kernel.Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
-            kernel.Bind<IPessoaService>().To<PessoaService>();
+            kernel.Bind<IUsuarioService>().To<UsuarioService>();
             kernel.Bind<IEstabelecimentoService>().To<EstabelecimentoService>();
             kernel.Bind<ITipoEstabelecimentoService>().To<TipoEstabelecimentoService>();
-            kernel.Bind<ITipoPessoaService>().To<TipoPessoaService>();
+            kernel.Bind<ITipoUsuarioService>().To<TipoUsuarioService>();
 
 
             kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
-            kernel.Bind<IPessoaRepository>().To<PessoaRepository>();
+            kernel.Bind<IUsuarioRepository>().To<UsuarioRepository>();
             kernel.Bind<IEstabelecimentoRepository>().To<EstabelecimentoRepository>();
             kernel.Bind<ITipoEstabelecimentoRepository>().To<TipoEstabelecimentoRepository>();
-            kernel.Bind<ITipoPessoaRepository>().To<TipoPessoaRepository>();
+            kernel.Bind<ITipoUsuarioRepository>().To<TipoUsuarioRepository>();
 
         }        
     }

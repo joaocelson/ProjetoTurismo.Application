@@ -30,25 +30,57 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Entities\Casa.cs" />
+    <Compile Include="Entities\Chale.cs" />
+    <Compile Include="Entities\Curtida.cs" />
+    <Compile Include="Entities\Foto.cs" />
+    <Compile Include="Entities\PousadaHotel.cs" />
+    <Compile Include="Entities\Publicacao.cs" />
+    <Compile Include="Entities\Telefone.cs" />
     <Compile Include="Entities\TipoEstabelecimento.cs" />
-    <Compile Include="Entities\TipoPessoa.cs" />
-    <Compile Include="Entities\Pessoa.cs" />
+    <Compile Include="Entities\TipoFoto.cs" />
+    <Compile Include="Entities\TipoUsuario.cs" />
+    <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Entities\Estabelecimento.cs" />
+    <Compile Include="Interfaces\Repositories\ITipoFotoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ITelefoneRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IPublicacaoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IPousadaHotelRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IFotoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICurtidaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IChaleRepository.cs" />
     <Compile Include="Interfaces\Repositories\ITipoEstabelecimentoRepository.cs" />
-    <Compile Include="Interfaces\Repositories\ITipoPessoaRepository.cs" />
-    <Compile Include="Interfaces\Repositories\IPessoaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ITipoUsuarioRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICasaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IUsuarioRepository.cs" />
     <Compile Include="Interfaces\Repositories\IEstabelecimentoRepository.cs" />
     <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Services\ITipoFotoService.cs" />
+    <Compile Include="Interfaces\Services\ITelefoneService.cs" />
+    <Compile Include="Interfaces\Services\IPublicacaoService.cs" />
+    <Compile Include="Interfaces\Services\IPousadaHotelService.cs" />
+    <Compile Include="Interfaces\Services\IFotoService.cs" />
+    <Compile Include="Interfaces\Services\ICurtidaService.cs" />
+    <Compile Include="Interfaces\Services\IChaleService.cs" />
+    <Compile Include="Interfaces\Services\ICasaService.cs" />
     <Compile Include="Interfaces\Services\ITipoEstabelecimentoService.cs" />
-    <Compile Include="Interfaces\Services\ITipoPessoaService.cs" />
-    <Compile Include="Interfaces\Services\IPessoaService.cs" />
+    <Compile Include="Interfaces\Services\ITipoUsuarioService.cs" />
+    <Compile Include="Interfaces\Services\IUsuarioService.cs" />
     <Compile Include="Interfaces\Services\IEstabelecimentoService.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\ITipoEstabelecimentoService.cs" />
-    <Compile Include="Services\TipoPessoaService.cs" />
-    <Compile Include="Services\PessoaService.cs" />
-    <Compile Include="Services\IEstabelecimentoService.cs" />
+    <Compile Include="Services\TipoFotoService.cs" />
+    <Compile Include="Services\TelefoneService.cs" />
+    <Compile Include="Services\PublicacaoService.cs" />
+    <Compile Include="Services\PousadaHotelService.cs" />
+    <Compile Include="Services\FotoService.cs" />
+    <Compile Include="Services\CurtidaService.cs" />
+    <Compile Include="Services\ChaleService.cs" />
+    <Compile Include="Services\CasaService.cs" />
+    <Compile Include="Services\TipoEstabelecimentoService.cs" />
+    <Compile Include="Services\TipoUsuarioService.cs" />
+    <Compile Include="Services\UsuarioService.cs" />
+    <Compile Include="Services\EstabelecimentoService.cs" />
     <Compile Include="Services\ServiceBase.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -1,8 +1,8 @@
-D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\bin\Debug\TurismoDDD.Domain.dll
-D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\bin\Debug\TurismoDDD.Domain.pdb
-D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\obj\Debug\TurismoDDD.Domain.dll
-D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\obj\Debug\TurismoDDD.Domain.pdb
 C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\bin\Debug\TurismoDDD.Domain.dll
 C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\bin\Debug\TurismoDDD.Domain.pdb
 C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\obj\Debug\TurismoDDD.Domain.dll
 C:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\obj\Debug\TurismoDDD.Domain.pdb
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\bin\Debug\TurismoDDD.Domain.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\bin\Debug\TurismoDDD.Domain.pdb
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\obj\Debug\TurismoDDD.Domain.dll
+D:\ProjetosGit\ProjetoTurismo.Application\ProjetoModeloDDD.Domain\obj\Debug\TurismoDDD.Domain.pdb

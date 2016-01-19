@@ -14,10 +14,10 @@ namespace TurismoDDD.MVC.AutoMapper
 
         protected override void Configure()
         {
-            Mapper.CreateMap<Pessoa, PessoaViewModel>();
+            Mapper.CreateMap<Usuario, UsuarioViewModel>();
             Mapper.CreateMap<Estabelecimento, EstabelecimentoViewModel>();
             Mapper.CreateMap<TipoEstabelecimento, TipoEstabelecimentoViewModel>();
-            Mapper.CreateMap<TipoPessoa, TipoPessoaViewModel>();
+            Mapper.CreateMap<TipoUsuario, TipoUsuarioViewModel>();
         }
     }
 }
