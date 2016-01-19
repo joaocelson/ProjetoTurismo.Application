@@ -16,7 +16,7 @@ namespace TurismoDDD.Domain.Entities
 
         public Usuario Usuario { get; set; }
 
-        public Curtida Curtida { get; set; }
+        public List<Curtida> Curtidas { get; set; }
 
         public DateTime DataInativacao { get; set; }
 

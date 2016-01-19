@@ -1,0 +1,114 @@
+﻿@model ProjetoModeloDDD.MVC.ViewModels.CasaViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CasaViewModel</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeFotoPerfil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeFotoPerfil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Disponivel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Disponivel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CasaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CasaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroQuartos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroQuartos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Suites)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Suites)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroSalas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroSalas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroBanheiros)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroBanheiros)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroPessoas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroPessoas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroVagasGaragem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroVagasGaragem)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EstabelecimentoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

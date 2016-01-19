@@ -32,6 +32,7 @@ namespace TurismoDDD.MVC.ViewModels
         public DateTime DataCadastro { get; set; }
 
         public bool Ativo { get; set; }
-       // public virtual IEnumerable<EstabelecimentoViewModel> Estabelecimentos { get; set; }
+       
+        public virtual IEnumerable<EstabelecimentoViewModel> Estabelecimentos { get; set; }
     }
 }

@@ -1,0 +1,42 @@
+﻿@model ProjetoModeloDDD.MVC.ViewModels.FotoViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FotoViewModel</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeFoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeFoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCadastro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataCadastro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataInativacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataInativacao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FotoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

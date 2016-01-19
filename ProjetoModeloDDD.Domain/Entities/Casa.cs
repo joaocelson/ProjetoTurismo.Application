@@ -8,22 +8,21 @@ namespace TurismoDDD.Domain.Entities
 {
     public class Casa : Estabelecimento
     {
-        public int CasaId;
+        public int CasaId { get; set; }
 
-        public int NumeroQuartos;
+        public int NumeroQuartos { get; set; }
 
-        public int Suites;
+        public int Suites { get; set; }
 
-        public int NumeroSalas;
+        public int NumeroSalas { get; set; }
 
-        public int NumeroBanheiros;
+        public int NumeroBanheiros { get; set; }
 
-        public int NumeroPessoas;
+        public int NumeroPessoas { get; set; }
 
-        public int NumeroVagasGaragem;
+        public int NumeroVagasGaragem { get; set; }
 
-        public Estabelecimento estabelecimento;
-
+        public Estabelecimento estabelecimento { get; set; }
     }
 
 }

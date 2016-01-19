@@ -1,0 +1,40 @@
+﻿@model TurismoDDD.Domain.Entities.Curtida
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Curtida</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DataInativacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataInativacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCurtida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataCurtida)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

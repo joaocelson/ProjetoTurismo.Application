@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - TurismoApp</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -16,14 +16,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("TurismoApp", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Usuários", "Index", "Pessoas")</li>
+                    <li>@Html.ActionLink("Casas", "Index", "Casa")</li>
+                    <li>@Html.ActionLink("Chalés", "Index", "Chales")</li>
+                    <li>@Html.ActionLink("Curtida", "Index", "Curtida")</li>
                     <li>@Html.ActionLink("Estabelecimentos", "Index", "Estabelecimentos")</li>
-                    <li>@Html.ActionLink("Tipo Pessoa", "Index", "TipoPessoas")</li>
+                    <li>@Html.ActionLink("Foto", "Index", "Foto")</li>
+                    <li>@Html.ActionLink("Pousada Hotel", "Index", "PousadaHotel")</li>
+                    <li>@Html.ActionLink("Publicação", "Index", "Publicacao")</li>                    
+                    <li>@Html.ActionLink("Telefone", "Index", "Telefone")</li>
+                    <li>@Html.ActionLink("Tipo Estabelecimento", "Index", "TipoEstabelecimento")</li>
+                    <li>@Html.ActionLink("Tipo Foto", "Index", "TipoFoto")</li>
+                    <li>@Html.ActionLink("Tipo Usuario", "Index", "TipoUsuario")</li>
+                    <li>@Html.ActionLink("Usuários", "Index", "Usuario")</li>
                 </ul>
             </div>
         </div>

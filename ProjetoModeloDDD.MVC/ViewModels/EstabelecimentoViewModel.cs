@@ -32,6 +32,6 @@ namespace TurismoDDD.MVC.ViewModels
         [ScaffoldColumn(false)]
         public DateTime DataCadastro { get; set; }
 
-       // public virtual PessoaViewModel Pessoa { get; set; }
+        public virtual UsuarioViewModel Usuario { get; set; }
     }
 }

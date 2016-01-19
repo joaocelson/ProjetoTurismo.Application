@@ -1,0 +1,120 @@
+﻿@model ProjetoModeloDDD.MVC.ViewModels.CasaViewModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CasaViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeFotoPerfil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeFotoPerfil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Disponivel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Disponivel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CasaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CasaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroQuartos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroQuartos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Suites)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Suites)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroSalas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroSalas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroBanheiros)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroBanheiros)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroPessoas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroPessoas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroVagasGaragem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroVagasGaragem)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

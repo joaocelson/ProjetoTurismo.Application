@@ -1,0 +1,45 @@
+﻿@model IEnumerable<TurismoDDD.Domain.Entities.Publicacao>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataInativacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataPublicacao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataInativacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataPublicacao)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PublicacaoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PublicacaoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PublicacaoId })
+        </td>
+    </tr>
+}
+
+</table>

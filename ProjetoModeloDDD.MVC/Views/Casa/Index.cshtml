@@ -1,0 +1,99 @@
+﻿@model IEnumerable<ProjetoModeloDDD.MVC.ViewModels.CasaViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Usuario.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeFotoPerfil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Valor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Disponivel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CasaId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroQuartos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Suites)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroSalas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroBanheiros)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroPessoas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroVagasGaragem)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Usuario.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeFotoPerfil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Valor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Disponivel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CasaId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroQuartos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Suites)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroSalas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroBanheiros)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroPessoas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroVagasGaragem)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EstabelecimentoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EstabelecimentoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EstabelecimentoId })
+        </td>
+    </tr>
+}
+
+</table>

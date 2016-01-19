@@ -10,12 +10,12 @@ namespace TurismoDDD.Infra.Data.EntityConfig
         {
             HasKey(p => p.CurtidaId);
 
-            Property(p => p.Usuario.UsuarioId)
-                .IsRequired();
+            //Property(p => p.Usuario.UsuarioId)
+            //    .IsRequired();
 
-            HasRequired(p => p.Usuario)
-                .WithMany()
-                .HasForeignKey(p => p.Usuario.UsuarioId);
+            //HasRequired(p => p.Usuario)
+            //    .WithMany()
+            //    .HasForeignKey(p => p.Usuario.UsuarioId);
         }
     }
 }

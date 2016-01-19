@@ -156,7 +156,15 @@
     <Compile Include="AutoMapper\AutoMapperConfig.cs" />
     <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
     <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
+    <Compile Include="Controllers\CasaController.cs" />
+    <Compile Include="Controllers\ChalesController.cs" />
+    <Compile Include="Controllers\CurtidaController.cs" />
+    <Compile Include="Controllers\FotoController.cs" />
+    <Compile Include="Controllers\PousadaHotelController.cs" />
+    <Compile Include="Controllers\PublicacaoController.cs" />
+    <Compile Include="Controllers\TelefoneController.cs" />
     <Compile Include="Controllers\TipoEstabelecimentoController.cs" />
+    <Compile Include="Controllers\TipoFotoController.cs" />
     <Compile Include="Controllers\TipoUsuarioController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -166,7 +174,15 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\TratamentoLog.cs" />
+    <Compile Include="ViewModels\CasaViewModel.cs" />
+    <Compile Include="ViewModels\ChaleViewModel.cs" />
+    <Compile Include="ViewModels\CurtidaViewModel.cs" />
+    <Compile Include="ViewModels\FotoViewModel.cs" />
+    <Compile Include="ViewModels\PousadaHotelViewModel.cs" />
+    <Compile Include="ViewModels\PublicacaoViewModel.cs" />
+    <Compile Include="ViewModels\TelefoneViewModel.cs" />
     <Compile Include="ViewModels\TipoEstabelecimentoViewModel.cs" />
+    <Compile Include="ViewModels\TipoFotoViewModel.cs" />
     <Compile Include="ViewModels\TipoUsuarioViewModel.cs" />
     <Compile Include="ViewModels\UsuarioViewModel.cs" />
     <Compile Include="ViewModels\EstabelecimentoViewModel.cs" />
@@ -229,11 +245,50 @@
     <Content Include="Views\TipoEstabelecimento\Create.cshtml" />
     <Content Include="Views\TipoEstabelecimento\Edit.cshtml" />
     <Content Include="Views\TipoEstabelecimento\Delete.cshtml" />
+    <Content Include="Views\Casa\Create.cshtml" />
+    <Content Include="Views\Casa\Edit.cshtml" />
+    <Content Include="Views\Casa\Index.cshtml" />
+    <Content Include="Views\Casa\Delete.cshtml" />
+    <Content Include="Views\Casa\Details.cshtml" />
+    <Content Include="Views\Chales\Create.cshtml" />
+    <Content Include="Views\Chales\Delete.cshtml" />
+    <Content Include="Views\Chales\Details.cshtml" />
+    <Content Include="Views\Chales\Edit.cshtml" />
+    <Content Include="Views\Chales\Index.cshtml" />
+    <Content Include="Views\Foto\Create.cshtml" />
+    <Content Include="Views\Foto\Delete.cshtml" />
+    <Content Include="Views\Foto\Details.cshtml" />
+    <Content Include="Views\Foto\Edit.cshtml" />
+    <Content Include="Views\Foto\Index.cshtml" />
+    <Content Include="Views\PousadaHotel\Create.cshtml" />
+    <Content Include="Views\PousadaHotel\Delete.cshtml" />
+    <Content Include="Views\PousadaHotel\Details.cshtml" />
+    <Content Include="Views\PousadaHotel\Edit.cshtml" />
+    <Content Include="Views\PousadaHotel\Index.cshtml" />
+    <Content Include="Views\Publicacao\Create.cshtml" />
+    <Content Include="Views\Publicacao\Delete.cshtml" />
+    <Content Include="Views\Publicacao\Details.cshtml" />
+    <Content Include="Views\Publicacao\Edit.cshtml" />
+    <Content Include="Views\Publicacao\Index.cshtml" />
+    <Content Include="Views\Telefone\Create.cshtml" />
+    <Content Include="Views\Telefone\Delete.cshtml" />
+    <Content Include="Views\Telefone\Details.cshtml" />
+    <Content Include="Views\Telefone\Edit.cshtml" />
+    <Content Include="Views\Telefone\Index.cshtml" />
+    <Content Include="Views\TipoFoto\Create.cshtml" />
+    <Content Include="Views\TipoFoto\Delete.cshtml" />
+    <Content Include="Views\TipoFoto\Details.cshtml" />
+    <Content Include="Views\TipoFoto\Edit.cshtml" />
+    <Content Include="Views\TipoFoto\Index.cshtml" />
+    <Content Include="Views\Curtida\Create.cshtml" />
+    <Content Include="Views\Curtida\Delete.cshtml" />
+    <Content Include="Views\Curtida\Details.cshtml" />
+    <Content Include="Views\Curtida\Edit.cshtml" />
+    <Content Include="Views\Curtida\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\" />
-    <Folder Include="Views\TipoEstabelecimentos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

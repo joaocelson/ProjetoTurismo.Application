@@ -1,0 +1,34 @@
+﻿@model TurismoDDD.Domain.Entities.Curtida
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Curtida</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DataInativacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataInativacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCurtida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataCurtida)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CurtidaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

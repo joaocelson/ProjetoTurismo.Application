@@ -1,0 +1,90 @@
+﻿@model ProjetoModeloDDD.MVC.ViewModels.ChaleViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ChaleViewModel</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeFotoPerfil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeFotoPerfil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Disponivel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Disponivel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChaleId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChaleId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroQuartos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroQuartos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroVagasGaragem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroVagasGaragem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroPessoas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroPessoas)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EstabelecimentoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

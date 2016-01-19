@@ -12,14 +12,21 @@ namespace TurismoDDD.Infra.Data.Contexto
         public ProjetoModeloContext()
             : base("TurismoDDD")
         {
-            
+
         }
 
-        public DbSet<Usuario> Pessoas { get; set; }
+        public DbSet<Casa> Casas { get; set; }
+        public DbSet<Chale> Chales { get; set; }
+        public DbSet<Curtida> Curtidas { get; set; }
         public DbSet<Estabelecimento> Estabelecimentos { get; set; }
-        public DbSet<TipoUsuario> TipoPessoas { get; set; }
+        public DbSet<Foto> Fotos { get; set; }
+        public DbSet<PousadaHotel> PousadaHoteis { get; set; }
+        public DbSet<Publicacao> Publicacoes { get; set; }
+        public DbSet<Telefone> Telefones { get; set; }
+        public DbSet<TipoFoto> TipoFotos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<TipoUsuario> TipoUsuarios { get; set; }
         public DbSet<TipoEstabelecimento> TipoEstabelecimentos { get; set; }
-
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -38,10 +45,18 @@ namespace TurismoDDD.Infra.Data.Contexto
             modelBuilder.Properties<string>()
                 .Configure(p => p.HasMaxLength(100));
 
-            modelBuilder.Configurations.Add(new UsuarioConfiguration());
+            modelBuilder.Configurations.Add(new CasaConfiguration());
+            modelBuilder.Configurations.Add(new ChaleConfiguration());
+            modelBuilder.Configurations.Add(new CurtidaConfiguration());
             modelBuilder.Configurations.Add(new EstabelecimentoConfiguration());
-            modelBuilder.Configurations.Add(new TipoUsuarioConfiguration());
+            modelBuilder.Configurations.Add(new FotoConfiguration());
+            modelBuilder.Configurations.Add(new PousadaHotelConfiguration());
+            modelBuilder.Configurations.Add(new PublicacaoConfiguration());
+            modelBuilder.Configurations.Add(new TelefoneConfiguration());
+            modelBuilder.Configurations.Add(new TipoFotoConfiguration());
             modelBuilder.Configurations.Add(new TipoEstabelecimentoConfiguration());
+            modelBuilder.Configurations.Add(new TipoUsuarioConfiguration());
+            modelBuilder.Configurations.Add(new UsuarioConfiguration());
         }
 
         public override int SaveChanges()
@@ -60,5 +75,8 @@ namespace TurismoDDD.Infra.Data.Contexto
             }
             return base.SaveChanges();
         }
+
+
+
     }
 }
